@@ -2,16 +2,25 @@ package io.zipcoder;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Problem4 {
 
     public static void main(String[] args){
         Problem4 test = new Problem4();
+
+        Scanner in = new Scanner(System.in);
+
         System.out.println("\nInput: bacabbb\nOutput: "+test.craftedAnagramPalindrome("bacabbb"));
         System.out.println("\nInput: baabbb\nOutput: "+test.craftedAnagramPalindrome("baabbb"));
         System.out.println("\nInput: bacab\nOutput: "+test.craftedAnagramPalindrome("bacab"));
         System.out.println("\nInput: baczzabbb\nOutput: "+test.craftedAnagramPalindrome("baczzabbb"));
         System.out.println("\nInput: baczabbb\nOutput: "+test.craftedAnagramPalindrome("baczabbb"));
+
+        System.out.print("Please enter a string of lower-case english characters: ");
+        String input = in.nextLine();
+        input=input.trim();
+        System.out.println("\nInput: "+input+"\nOutput: "+test.craftedAnagramPalindrome(input));
     }
 
     public int[] charCounter(String input){
