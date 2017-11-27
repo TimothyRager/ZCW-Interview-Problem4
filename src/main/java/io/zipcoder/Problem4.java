@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class Problem4 {
-//Please note that preeeety much none of this actually works.
+
     public static void main(String[] args){
         Problem4 test = new Problem4();
         System.out.println("\nInput: bacabbb\nOutput: "+test.craftedAnagramPalindrome("bacabbb"));
